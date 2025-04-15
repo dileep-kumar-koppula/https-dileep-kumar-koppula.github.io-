@@ -3,79 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
+  <title>My Portfolio</title>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Segoe UI', sans-serif;
-      background: #A020F0;
+      background-color: #A020F0;
       color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       text-align: center;
     }
 
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 4rem 1rem 2rem;
+    }
+
     h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
       margin-bottom: 2rem;
-      font-size: 3rem;
-      color: #fff;
+      color: #e0d8f4;
     }
 
     .repo-list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       list-style: none;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
 
     .repo-item {
-      background-color: #fff; /* Sea Pearl Violet background for repo items */
-      color: A020F0;
-      padding: 1rem;
-      margin: 0.5rem;
-      width: 300px;
-      border-radius: 8px;
+      background-color: #fff;
+      color: #A020F0;
       text-decoration: none;
-      font-size: 1.2rem;
-      transition: background-color 0.3s;
+      padding: 1rem;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: all 0.3s ease;
     }
 
     .repo-item:hover {
-      background-color: #A020F0; /* Violet background on hover */
-      color: #fff; /* White text on hover */
+      background-color: #7a0ccc;
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     }
 
     footer {
-      position: fixed;
-      bottom: 10px;
-      font-size: 0.9rem;
-      color: #fff;
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: #e0d8f4;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>👋 Hello, I'm John Doe</h1>
+    <p class="subtitle">Full Stack Developer crafting modern web experiences.</p>
 
-<h1>Welcome to My Portfolio</h1>
+    <ul class="repo-list">
+      <li><a href="https://name.github.io/project1" class="repo-item">🔗 Project One</a></li>
+      <li><a href="https://name.github.io/project2" class="repo-item">🔗 Project Two</a></li>
+      <li><a href="https://name.github.io/project3" class="repo-item">🔗 Project Three</a></li>
+      <li><a href="https://name.github.io/project4" class="repo-item">🔗 Project Four</a></li>
+      <!-- Add more as needed -->
+    </ul>
 
-<!-- Repository Links List -->
-<ul class="repo-list">
-  <li><a href="https://github.com/yourusername/repository1" target="_blank" class="repo-item">Repository 1</a></li>
-  <li><a href="https://github.com/yourusername/repository2" target="_blank" class="repo-item">Repository 2</a></li>
-  <li><a href="https://github.com/yourusername/repository3" target="_blank" class="repo-item">Repository 3</a></li>
-  <li><a href="https://github.com/yourusername/repository4" target="_blank" class="repo-item">Repository 4</a></li>
-  <!-- Add more repositories here -->
-</ul>
-
-<!-- Footer -->
-<footer>
-  <p>Powered by GitHub Pages</p>
-</footer>
-
+    <footer>© 2025 John Doe. All rights reserved.</footer>
+  </div>
 </body>
 </html>
